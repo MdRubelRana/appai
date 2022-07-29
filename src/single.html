@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -5,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Details Page</title>
+
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 
     <!-- TailwindCSS Stylesheet -->
     <link rel="stylesheet" href="../public/css/output.css">
@@ -14,6 +19,17 @@
 </head>
 
 <body class="font-roboto">
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumb bg-breadcrumb">
+        <h3 class="breadcrumb__title capitalize">blog details</h3>
+        <p class="breadcrumb__navigation capitalize">
+            <span class="">home - </span>
+            <span class="">blog details</span>
+        </p>
+    </div>
+
+
     <!-- Content Area Start -->
     <section class="main container mx-auto">
         <div class="main__content flex flex-wrap">
@@ -72,43 +88,121 @@
                 <!-- Share Buttons -->
                 <div class="post-social-share-wrapper bg-[#f6f6f6] flex justify-between items-center h-14 px-10 my-10">
                     <div class="socal-share">
-                        <ul class="share-list">
+                        <ul class="share-list flex flex-wrap gap-3">
                             <!-- Facebook -->
                             <li class="share-list__item">
-                                <a href="#" class=""></a>
+                                <a href="#" class="">
+                                    <span class="fab fa-facebook-f text-sm text-[#c4c4c4] hover:text-yellow"></span>
+                                </a>
                             </li>
                             <!-- Google Plus -->
                             <li class="share-list__item">
-                                <a href="#" class=""></a>
+                                <a href="#" class="">
+                                    <span class="fab fa-google-plus-g text-sm text-[#c4c4c4] hover:text-yellow"></span>
+                                </a>
                             </li>
                             <!-- Twitter -->
                             <li class="share-list__item">
-                                <a href="#" class=""></a>
+                                <a href="#" class="">
+                                    <span class="fab fa-twitter text-sm text-[#c4c4c4] hover:text-yellow"></span>
+                                </a>
                             </li>
                             <!-- Instagram -->
                             <li class="share-list__item">
-                                <a href="#" class=""></a>
+                                <a href="#" class="">
+                                    <span class="fab fa-instagram text-sm text-[#c4c4c4] hover:text-yellow"></span>
+                                </a>
                             </li>
                             <!-- Pinterest -->
                             <li class="share-list__item">
-                                <a href="#" class=""></a>
+                                <a href="#" class="">
+                                    <span class="fab fa-pinterest-p text-sm text-[#c4c4c4] hover:text-yellow"></span>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="post-tags capitalize text-xs text-gray">
+                    <!-- Post Tags -->
+                    <div class="post-tags capitalize font-light text-xs text-gray flex flex-wrap items-center gap-1">
                         <!-- Tag Icon -->
-                        <span class="icon">
-
-                        </span>
-                        <a href="#" class="">Mobile App,</a>
-                        <a href="#" class="">Design,</a>
-                        <a href="#" class="">Recent Post</a>
+                        <span class="icon fas fa-tag text-xs text-gray"></span>
+                        <a href="#" class="text-gray hover:text-yellow">Mobile App,</a>
+                        <a href="#" class="text-gray hover:text-yellow">Design,</a>
+                        <a href="#" class="text-gray hover:text-yellow">Recent Post</a>
                     </div>
                 </div>
+
+                <!-- Post Comments -->
+                <div class="post_comments mt-5">
+                    <h3 class="title text-grayDark uppercase font-semibold text-lg">comments on this post</h3>
+                    <p class="post_comments-counts text-grayLight text-sm font-normal py-4">8 comments</p>
+                    <ul class="commentslist list-none my-4">
+                        <li class="comments-list__item flex flex-wrap justify-start items-start gap-4 relative my-10">
+                            <!-- Comment Author Image -->
+                            <div class="item-left w-[10%]">
+                                <img src="../public/img/comments.png" alt="user image" class="item-left__img w-20 h-20 rounded-full object-cover object-center">
+                            </div>
+                            <!-- Full Comment -->
+                            <div class="item-right w-[87%]">
+                                <h3 class="comment-autor font-semibold text-grayDark text-sm hover:text-yellow">
+                                    <a href="#" class="">Jack Sparrow</a>
+                                </h3>
+                                <p class="comment-time text-gray font-normal text-xs py-2">2 hours ago</p>
+                                <p class="comment-body font-normal text-grayDark text-sm py-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quaa
+                                </p>
+                                <a href="#" class="comment-reply uppercase font-medium text-xs text-grayDark absolute top-0 right-0 hover:text-yellow">reply</a>
+                            </div>
+                        </li>
+
+                        <!-- Separator -->
+                        <hr class="bg-gray opacity-5">
+
+                        <li class="comments-list__item--reply flex flex-wrap justify-start items-start gap-4 relative ml-10 my-10">
+                            <!-- Comment Author Image -->
+                            <div class="item-left w-[10%]">
+                                <img src="../public/img/comments.png" alt="user image" class="item-left__img w-20 h-20 rounded-full object-cover object-center">
+                            </div>
+                            <!-- Full Comment -->
+                            <div class="item-right w-[87%]">
+                                <h3 class="comment-autor font-semibold text-grayDark text-sm hover:text-yellow">
+                                    <a href="#" class="">Jack Sparrow</a>
+                                </h3>
+                                <p class="comment-time text-gray font-normal text-xs py-2">2 hours ago</p>
+                                <p class="comment-body font-normal text-grayDark text-sm py-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quaa
+                                </p>
+                                <a href="#" class="comment-reply uppercase font-medium text-xs text-grayDark absolute top-0 right-0 hover:text-yellow">reply</a>
+                            </div>
+                        </li>
+                        
+                        <!-- Separator -->
+                        <hr class="bg-gray opacity-5">
+
+                        <li class="comments-list__item flex flex-wrap justify-start items-start gap-4 relative my-10">
+                            <!-- Comment Author Image -->
+                            <div class="item-left w-[10%]">
+                                <img src="../public/img/comments.png" alt="user image" class="item-left__img w-20 h-20 rounded-full object-cover object-center">
+                            </div>
+                            <!-- Full Comment -->
+                            <div class="item-right w-[87%]">
+                                <h3 class="comment-autor font-semibold text-grayDark text-sm hover:text-yellow">
+                                    <a href="#" class="">Jack Sparrow</a>
+                                </h3>
+                                <p class="comment-time text-gray font-normal text-xs py-2">2 hours ago</p>
+                                <p class="comment-body font-normal text-grayDark text-sm py-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quaa
+                                </p>
+                                <a href="#" class="comment-reply uppercase font-medium text-xs text-grayDark absolute top-0 right-0 hover:text-yellow">reply</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- Content Area End -->
+
+    
 </body>
 
 </html>
+

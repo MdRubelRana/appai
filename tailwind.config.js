@@ -2,7 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
+    extend: {backgroundImage: {
+      'breadcrumb': "url('../img/breadcrumb.jpg')",
+    },
       colors:{
         gray: '#757575',
         grayLight: '#4c5462',
