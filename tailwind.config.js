@@ -2,17 +2,21 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {backgroundImage: {
-      'breadcrumb': "url('../img/breadcrumb.jpg')",
+    container: {
+      center: true,
     },
-      colors:{
+    extend: {
+      backgroundImage: {
+        'breadcrumb': "url('../img/breadcrumb.jpg')",
+      },
+      colors: {
         gray: '#757575',
         grayLight: '#4c5462',
         grayDark: '#2b323f',
         red: '#fd1d1d',
         yellow: '#fcb045',
       },
-      fontFamily:{
+      fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
       },
     },
