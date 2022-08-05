@@ -615,6 +615,18 @@ video {
   right: 50%;
 }
 
+.-top-40 {
+  top: -10rem;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.bottom-1\/2 {
+  bottom: 50%;
+}
+
 .col-span-full {
   grid-column: 1 / -1;
 }
@@ -661,6 +673,16 @@ video {
   margin-bottom: 5rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -679,6 +701,22 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.-mb-24 {
+  margin-bottom: -6rem;
+}
+
+.-mb-20 {
+  margin-bottom: -5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-60 {
+  margin-top: 15rem;
 }
 
 .block {
@@ -745,8 +783,20 @@ video {
   height: 24rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
+}
+
+.max-h-36 {
+  max-height: 9rem;
 }
 
 .min-h-\[100px\] {
@@ -803,6 +853,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-2\/5 {
+  width: 40%;
 }
 
 .cursor-pointer {
@@ -891,6 +945,10 @@ video {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -907,9 +965,34 @@ video {
   border-width: 1px;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
 .border-gray {
   --tw-border-opacity: 1;
   border-color: rgb(117 117 117 / var(--tw-border-opacity));
+}
+
+.border-grayLight {
+  --tw-border-opacity: 1;
+  border-color: rgb(76 84 98 / var(--tw-border-opacity));
 }
 
 .border-opacity-30 {
@@ -939,6 +1022,16 @@ video {
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(252 176 69 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#00c9fd\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 201 253 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 29 29 / var(--tw-bg-opacity));
 }
 
 .bg-breadcrumb {
@@ -987,6 +1080,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .py-24 {
@@ -1064,6 +1161,16 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -1102,6 +1209,34 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pl-24 {
+  padding-left: 6rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
+.pt-60 {
+  padding-top: 15rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 
 .text-center {
@@ -1207,6 +1342,23 @@ video {
   opacity: 0;
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1251,6 +1403,11 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus\:border-yellow:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 176 69 / var(--tw-border-opacity));
 }
 
 .focus\:outline-gray:focus {
