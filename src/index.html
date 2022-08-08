@@ -10,6 +10,9 @@
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+
     <!-- TailwindCSS Stylesheet -->
     <link rel="stylesheet" href="../public/css/output.css">
 
@@ -17,7 +20,188 @@
     <link rel="stylesheet" href="../public/css/main.css">
 </head>
 
-<body>
+<body class="font-roboto">
+
+    <!-- Download App Section Start -->
+    <div class="download-app bg-gradient-to-r from-red to-yellow py-28">
+        <div class="flex flex-wrap items-center">
+            <div class="download-app-content container mx-auto">
+                <div class="left-side">
+                    <h1 class="text-white text-5xl font-semibold capitalize">download app today</h1>
+                    <p class="text-white text-sm font-normal py-6 w-1/2">Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit amet, consectetur adipisicing incididunt.</p>
+                    <div class="download-buttons flex flex-wrap gap-10 my-4 relative">
+                        <button class="google-store flex items-center gap-4 px-10 py-2 border-2 rounded-full border-white hover:bg-gradient-to-r from-yellow to-red hover:shadow-2xl transition-all ease-in-out duration-300">
+                            <div class="icon">
+                                <span class="fab fa-android text-white text-2xl"></span>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-white text-xs font-normal">available on</p>
+                                <p class="text-white capitalize font-semibold text-base">google store</p>
+                            </div>
+                        </button>
+                        <button class="apple-store flex items-center gap-4 px-10 py-2 border-2 rounded-full border-white hover:bg-gradient-to-r from-yellow to-red hover:shadow-2xl transition-all ease-in-out duration-300">
+                            <div class="icon">
+                                <span class="fab fa-apple text-white text-2xl"></span>
+                            </div>
+                            <div class="text-left">
+                                <p class="text-white text-xs font-normal">available on</p>
+                                <p class="text-white capitalize font-semibold text-base">apple store</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="download-app-image absolute right-0 top-[18px] animate__animated animate__fadeInRight">
+                        <img src="../public/img/download-app-mockup.png" alt="App Image" class="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download App Section End -->
+
+
+    <!-- Latest Blog Post Start -->
+    <div class="latest-post container mx-auto px-5 lg:px-0 mt-32">
+        <div class="section-info text-center">
+            <h1 class="title text-3xl uppercase font-semibold text-grayDark">latest blog post</h1>
+            <p class="subtitle text-gray text-sm px-[25%] p-5">Lorem ipsum madolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit amet, consectetur
+                adipisicing incididunt.</p>
+        </div>
+        <!-- Post Card -->
+        <div class="post-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 my-10">
+            <!-- Post Item -->
+            <div class="post-item">
+                <div class="post-item__img">
+                    <a href="#" class="">
+                        <img src="../public/img/blog_single.jpg" alt="Post Image" class="post-img">
+                    </a>
+                </div>
+                <!-- Meta Infos -->
+                <ul class="meta-info list-none text-gray font-normal text-sm flex flex-wrap space-x-4 my-4">
+                    <li class="meta-info__list post-author">
+                        By <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">Admin</a>
+                    </li>
+                    <li class="meta-info__list post-date">
+                        <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">Jul 15 2022</a>
+                    </li>
+                    <li class="meta-info__list post-comment">
+                        <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">(20) Comments</a>
+                    </li>
+                </ul>
+                <!-- Post Title -->
+                <h1 class="title text-lg font-semibold text-grayDark">
+                    <a href="#" class="hover:text-yellow">How to showcase your awesome app?</a>
+                </h1>
+                <!-- Post Excerpt -->
+                <p class="excerpt font-normal text-sm text-grayLight py-4">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Perspiciatis perferendis beatae tenetur magni repellendus et dolorem quas eius
+                    sit. Mollitia.</p>
+                <!-- Read More Button -->
+                <div class="read-more inline-block group">
+                    <a href="#"
+                        class="flex items-center capitalize text-sm font-normal text-grayLight group-hover:text-yellow transition-all ease-in-out duration-500">read
+                        more
+                        <span
+                            class="arrow-icon pl-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all ease-in-out duration-500">
+                            <svg class=" fill-grayLight group-hover:fill-yellow" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 8C1 7.86739 1.05268 7.74021 1.14645 7.64645C1.24021 7.55268 1.36739 7.5 1.5 7.5H13.293L10.146 4.354C10.0521 4.26011 9.99937 4.13277 9.99937 4C9.99937 3.86722 10.0521 3.73988 10.146 3.646C10.2399 3.55211 10.3672 3.49937 10.5 3.49937C10.6328 3.49937 10.7601 3.55211 10.854 3.646L14.854 7.646C14.9006 7.69244 14.9375 7.74762 14.9627 7.80836C14.9879 7.86911 15.0009 7.93423 15.0009 8C15.0009 8.06577 14.9879 8.13089 14.9627 8.19163C14.9375 8.25238 14.9006 8.30755 14.854 8.354L10.854 12.354C10.7601 12.4479 10.6328 12.5006 10.5 12.5006C10.3672 12.5006 10.2399 12.4479 10.146 12.354C10.0521 12.2601 9.99937 12.1328 9.99937 12C9.99937 11.8672 10.0521 11.7399 10.146 11.646L13.293 8.5H1.5C1.36739 8.5 1.24021 8.44732 1.14645 8.35355C1.05268 8.25978 1 8.13261 1 8V8Z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Post Item -->
+            <div class="post-item">
+                <div class="post-item__img">
+                    <a href="#" class="">
+                        <img src="../public/img/blog_single.jpg" alt="Post Image" class="post-img">
+                    </a>
+                </div>
+                <!-- Meta Infos -->
+                <ul class="meta-info list-none text-gray font-normal text-sm flex flex-wrap space-x-4 my-4">
+                    <li class="meta-info__list post-author">
+                        By <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">Admin</a>
+                    </li>
+                    <li class="meta-info__list post-date">
+                        <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">Jul 15 2022</a>
+                    </li>
+                    <li class="meta-info__list post-comment">
+                        <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">(20) Comments</a>
+                    </li>
+                </ul>
+                <!-- Post Title -->
+                <h1 class="title text-lg font-semibold text-grayDark">
+                    <a href="#" class="hover:text-yellow">How to showcase your awesome app?</a>
+                </h1>
+                <!-- Post Excerpt -->
+                <p class="excerpt font-normal text-sm text-grayLight py-4">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Perspiciatis perferendis beatae tenetur magni repellendus et dolorem quas eius
+                    sit. Mollitia.</p>
+                <!-- Read More Button -->
+                <div class="read-more inline-block group">
+                    <a href="#"
+                        class="flex items-center capitalize text-sm font-normal text-grayLight group-hover:text-yellow transition-all ease-in-out duration-500">read
+                        more
+                        <span
+                            class="arrow-icon pl-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all ease-in-out duration-500">
+                            <svg class=" fill-grayLight group-hover:fill-yellow" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 8C1 7.86739 1.05268 7.74021 1.14645 7.64645C1.24021 7.55268 1.36739 7.5 1.5 7.5H13.293L10.146 4.354C10.0521 4.26011 9.99937 4.13277 9.99937 4C9.99937 3.86722 10.0521 3.73988 10.146 3.646C10.2399 3.55211 10.3672 3.49937 10.5 3.49937C10.6328 3.49937 10.7601 3.55211 10.854 3.646L14.854 7.646C14.9006 7.69244 14.9375 7.74762 14.9627 7.80836C14.9879 7.86911 15.0009 7.93423 15.0009 8C15.0009 8.06577 14.9879 8.13089 14.9627 8.19163C14.9375 8.25238 14.9006 8.30755 14.854 8.354L10.854 12.354C10.7601 12.4479 10.6328 12.5006 10.5 12.5006C10.3672 12.5006 10.2399 12.4479 10.146 12.354C10.0521 12.2601 9.99937 12.1328 9.99937 12C9.99937 11.8672 10.0521 11.7399 10.146 11.646L13.293 8.5H1.5C1.36739 8.5 1.24021 8.44732 1.14645 8.35355C1.05268 8.25978 1 8.13261 1 8V8Z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Post Item -->
+            <div class="post-item">
+                <div class="post-item__img">
+                    <a href="#" class="">
+                        <img src="../public/img/blog_single.jpg" alt="Post Image" class="post-img">
+                    </a>
+                </div>
+                <!-- Meta Infos -->
+                <ul class="meta-info list-none text-gray font-normal text-sm flex flex-wrap space-x-4 my-4">
+                    <li class="meta-info__list post-author">
+                        By <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">Admin</a>
+                    </li>
+                    <li class="meta-info__list post-date">
+                        <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">Jul 15 2022</a>
+                    </li>
+                    <li class="meta-info__list post-comment">
+                        <a href="#" class="hover:text-yellow transition-all ease-in-out duration-500">(20) Comments</a>
+                    </li>
+                </ul>
+                <!-- Post Title -->
+                <h1 class="title text-lg font-semibold text-grayDark">
+                    <a href="#" class="hover:text-yellow">How to showcase your awesome app?</a>
+                </h1>
+                <!-- Post Excerpt -->
+                <p class="excerpt font-normal text-sm text-grayLight py-4">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Perspiciatis perferendis beatae tenetur magni repellendus et dolorem quas eius
+                    sit. Mollitia.</p>
+                <!-- Read More Button -->
+                <div class="read-more inline-block group">
+                    <a href="#"
+                        class="flex items-center capitalize text-sm font-normal text-grayLight group-hover:text-yellow transition-all ease-in-out duration-500">read
+                        more
+                        <span
+                            class="arrow-icon pl-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all ease-in-out duration-500">
+                            <svg class=" fill-grayLight group-hover:fill-yellow" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 8C1 7.86739 1.05268 7.74021 1.14645 7.64645C1.24021 7.55268 1.36739 7.5 1.5 7.5H13.293L10.146 4.354C10.0521 4.26011 9.99937 4.13277 9.99937 4C9.99937 3.86722 10.0521 3.73988 10.146 3.646C10.2399 3.55211 10.3672 3.49937 10.5 3.49937C10.6328 3.49937 10.7601 3.55211 10.854 3.646L14.854 7.646C14.9006 7.69244 14.9375 7.74762 14.9627 7.80836C14.9879 7.86911 15.0009 7.93423 15.0009 8C15.0009 8.06577 14.9879 8.13089 14.9627 8.19163C14.9375 8.25238 14.9006 8.30755 14.854 8.354L10.854 12.354C10.7601 12.4479 10.6328 12.5006 10.5 12.5006C10.3672 12.5006 10.2399 12.4479 10.146 12.354C10.0521 12.2601 9.99937 12.1328 9.99937 12C9.99937 11.8672 10.0521 11.7399 10.146 11.646L13.293 8.5H1.5C1.36739 8.5 1.24021 8.44732 1.14645 8.35355C1.05268 8.25978 1 8.13261 1 8V8Z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest Blog Post End -->
+
     <!-- Newsletter Section Start -->
     <div class="newsletter container mx-auto bg-grayDark py-10 my-20">
         <div class="flex flex-wrap justify-center items-center space-x-10">
@@ -47,6 +231,128 @@
         </div>
     </div>
     <!-- Newsletter Section End -->
+
+    <!-- Contact Section Start -->
+    <div class="contact-section  relative">
+        <!-- Map Location -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d14538.238178214504!2d88.60570098055018!3d24.36183099866269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d24.3635882!2d88.624134!4m5!1s0x39fbefa5534ab557%3A0x77d2fff44f051ccc!2s9J73%2B7W2%20Dainik%20Barta%20Complex%2C%20Rajshahi!3m2!1d24.3631329!2d88.6047775!5e0!3m2!1sen!2sbd!4v1659803365330!5m2!1sen!2sbd"
+                class="w-full" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div
+            class="container mx-auto flex flex-wrap justify-start absolute left-1/2 -translate-x-[50%] top-1/2 w-full m-auto  bg-white">
+            <!-- Contact Leftside -->
+            <div class="contact-leftside w-3/5 py-16 pl-24">
+                <h1 class="text-3xl capitalize font-semibold text-grayDark">get in touch</h1>
+                <form class="contact-form py-10">
+                    <input type="text" name="name" placeholder="Your Name*"
+                        class="border-b-[1px] border-gray outline-none focus:border-yellow text-sm py-1 w-4/5 my-6"
+                        required>
+                    <input type="text" name="name" placeholder="Email Address*"
+                        class="border-b-[1px] border-gray outline-none focus:border-yellow text-sm py-1 w-4/5 my-6"
+                        required>
+                    <input type="text" name="name" placeholder="Your Subject*"
+                        class="border-b-[1px] border-gray outline-none focus:border-yellow text-sm py-1 w-4/5 my-6"
+                        required>
+                    <textarea type="text" name="name" placeholder="Write Message*"
+                        class="border-b-[1px] border-gray outline-none focus:border-yellow text-sm py-1 w-4/5 my-6 h-20 max-h-36"
+                        required></textarea>
+                    <!-- Submit Button -->
+                    <div class="input-item col-span-full">
+                        <button
+                            class="bg-gradient-to-r from-red to-yellow hover:shadow-xl px-8 py-3 text-white font-medium text-sm uppercase rounded-full transition-all ease-in-out duration-300">send
+                            message</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Contact Rightside -->
+            <div class="contact-rightside w-2/5 bg-[#00c9fd]">
+                <div class="p-20">
+                    <h1 class="text-3xl capitalize font-semibold text-white">address</h1>
+                    <p class="description text-sm text-white py-6">Lorem ipsum dolor sit amet, consectetur adipisicin
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <!-- Contact Information -->
+                    <div class="contact-information space-y-4">
+                        <!-- Call Icon -->
+                        <div class="contact-information__item flex flex-wrap items-center gap-3">
+                            <div
+                                class="w-8 h-8 bg-transparent border-white border rounded-full flex justify-center items-center">
+                                <span class="icon fas fa-phone text-white"></span>
+                            </div>
+                            <span class="text font-medium text-white text-base">+0044 545 989 626</span>
+                        </div>
+                        <!-- Email Icon -->
+                        <div class="contact-information__item flex flex-wrap items-center gap-3">
+                            <div
+                                class="w-8 h-8 bg-transparent border-white border rounded-full flex justify-center items-center">
+                                <span class="icon fas fa-paper-plane text-white"></span>
+                            </div>
+                            <span class="text font-medium text-white text-base">yourexamle@example.com</span>
+                        </div>
+                        <!-- Location Icon -->
+                        <div class="contact-information__item flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 bg-transparent border-white border rounded-full flex justify-center items-center">
+                                <span class="icon fas fa-location-dot text-white"></span>
+                            </div>
+                            <span class="text font-medium text-white text-base">221B Park Street Lane, New York City,
+                                USA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-grayDark pt-[600px] pb-10 block">
+        <div class="container mx-auto">
+            <ul class="social-links flex flex-wrap justify-center gap-4">
+                <!-- Facebook -->
+                <li class="social-links__item group inline-block">
+                    <a href="#"
+                        class="bg-white group-hover:bg-gradient-to-tr from-red to-yellow rounded-full w-8 h-8 flex flex-wrap justify-center items-center transition-all ease-in-out duration-500">
+                        <span
+                            class="fab fa-facebook-f text-grayDark group-hover:text-white text-base transition-all ease-in-out duration-300"></span>
+                    </a>
+                </li>
+                <!-- Google Plus -->
+                <li class="social-links__item group inline-block">
+                    <a href="#"
+                        class="bg-white group-hover:bg-gradient-to-tr from-red to-yellow rounded-full w-8 h-8 flex flex-wrap justify-center items-center transition-all ease-in-out duration-500">
+                        <span
+                            class="fab fa-google-plus-g text-grayDark group-hover:text-white text-base transition-all ease-in-out duration-300"></span>
+                    </a>
+                </li>
+                <!-- Twitter -->
+                <li class="social-links__item group inline-block">
+                    <a href="#"
+                        class="bg-white group-hover:bg-gradient-to-tr from-red to-yellow rounded-full w-8 h-8 flex flex-wrap justify-center items-center transition-all ease-in-out duration-500">
+                        <span
+                            class="fab fa-twitter text-grayDark group-hover:text-white text-base transition-all ease-in-out duration-300"></span>
+                    </a>
+                </li>
+                <!-- Instagram -->
+                <li class="social-links__item group inline-block">
+                    <a href="#"
+                        class="bg-white group-hover:bg-gradient-to-tr from-red to-yellow rounded-full w-8 h-8 flex flex-wrap justify-center items-center transition-all ease-in-out duration-500">
+                        <span
+                            class="fab fa-instagram text-grayDark group-hover:text-white text-base transition-all ease-in-out duration-300"></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyrights">
+                <p class="text-xs text-white text-center font-normal pt-6">2022 &copy; All Rights Reserved by
+                    <a href="#" class="hover:text-yellow">#</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
 </body>
 
